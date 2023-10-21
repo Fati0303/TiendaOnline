@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Yellowtail&display=swap');
+/*moviles*/
+
+* {
+    max-width: 100%;
+    font-family: "Gilda Display";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: inherit;
+    background-color: rgb(255, 255, 255);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+/*logo*/
+.logo {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #202020;
+
+
+}
+
+header {
+    text-align: center;
+    color: #000000;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    width: auto;
+}
+
+/*barra de navegacion*/
+#barra ul {
+    list-style-type: none;
+    text-align: right;
+
+}
+
+#barra li {
+    display: inline;
+    text-align: center;
+    margin: 0 10 0 0;
+
+}
+
+#barra li a {
+    padding: 2px 7px 2px 7px;
+    color: #000000;
+    background-color: transparent;
+    border: 1px transparent;
+    text-decoration: none;
+
+}
+
+#barra li a:hover {
+    background-color: #940253;
+    color: #ffffff;
+}
+
+/*menu desplegable*/
+.dropdown {
+    text-align: left;
+    display: inline-block;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: none;
+}
+
+.dropdown:hover .dropdown-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-item {
+    text-decoration: none;
+    color: #292524;
+    border: solid 1px #d6d3d1;
+    background: white;
+    padding: 0.5em;
+    font-size: 0.9em;
+    font-family: sans;
+}
+
+.drop-item:hover {
+    background: #ffffff;
+}
+
+
+.btn {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+/*fin menu desplegable*/
+
+/*redes*/
+.perfil h1 {
+    color: #940253;
+}
+
+.perfil .redes {
+    margin: 20px 0;
+    color: #fff;
+}
+
+.perfil .redes a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #940253;
+    border: 1px solid #940253;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+.perfil .redes a:hover {
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
+
+/*fin redes*/
+/*productos*/
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    border-radius: 10px;
+}
+
+.product:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20)
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+
+}
+
+.product figure {
+    overflow: hidden;
+}
+
+.product:hover img {
+    transform: scale(1.2);
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #940253;
+}
+
+.info-product button {
+    border: none;
+    background: none;
+    background-color: #202020;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+/*fin productos*/
+
+/*contacto*/
+.contacto {
+    background-color: #202020;
+    padding: 140px 0 100 0;
+    color: #e6e6e6;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.contacto.contenido-seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.contacto .contenido-seccion h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.contacto .contenido-seccion .fila {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto .contenido-seccion .fila .columna {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.contacto .contenido-seccion .fila .columna h2 {
+    color: #940253;
+}
+
+/*fin contacto*/
+/*footer*/
+footer {
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+/*fin footer*/
+
+/*moviles*/
+@media (max-width: 480px) {
+    body {
+        align-content: center;
+    }
+
+    #barra ul {
+        display: flex;
+        flex-direction: row
+    }
+
+    .container-products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
