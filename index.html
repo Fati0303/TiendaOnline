@@ -16,45 +16,48 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">Tienda Online</h1>
-        <nav id="barra">
-            <hr>
-            <ul>
-                <li><a href="#">
-                        <div class="dropdown">
+    <!-- inicio -->
+    <section class="inicio" id="inicio">
 
-                            productos
+        <div class="contenido-seccion">
+            <header>
+                <h1 class="logo">Tienda Online</h1>
+                <div class="lateral">
+                    <div class="nav-bar" onclick="mostrarOcultarMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <nav id="nav" class="">
+                        <a href="#hombre" class="seleccionado" onclick="seleccionar(this)">hombre</a>
+                        <a href="#mujer" onclick="seleccionar(this)">mujer</a>
+                        <a href="#niño" onclick="seleccionar(this)">niño</a>
+                    </nav>
+                </div>
+                <hr>
+                <!--descripcion-->
+                <div class="perfil">
+                    <h1>Indumentaria deportiva</h1>
+                    <br>
+                    <h2>Ropa, calzado y accesorios</h2>
+                    <!--fin descripcion-->
+                    <!--redes-->
+                    <div class="redes">
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://es-la.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <!--fin redes-->
+                </div>
 
-                            <div class="dropdown-options">
-                                <a class="drop-item" href="#">hombre</a>
-                                <a class="drop-item" href="#">mujer</a>
-                                <a class="drop-item" href="#">niños</a>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="#">ofertas</a></li>
-                <li><a href="#">contacto</a></li>
-                <li><a href="#">ingresar</a></li>
-            </ul>
-
-            <hr>
-        </nav>
-        <!--descripcion-->
-        <div class="perfil">
-            <h1>Indumentaria deportiva</h1>
-            <br>
-            <h2>Ropa, calzado y accesorios</h2>
-            <!--fin descripcion-->
-            <!--redes-->
-            <div class="redes">
-                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://es-la.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <!--fin redes-->
+            </header>
+            <nav id="barra">
+                <ul>
+                    <li><a href="#ofertas">ofertas</a></li>
+                    <li><a href="#contacto">contacto</a></li>
+                    <li><a href="login.html">ingresar</a></li>
+                </ul>
+                <hr>
+            </nav>
         </div>
-    </header>
+    </section>
     <!--productos-->
     <main class="container-products">
         <div class="product">
@@ -91,7 +94,7 @@
     <!--fin productos-->
     <!--carousel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
+        <div class="carousel-indicators" >
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -99,7 +102,7 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="ofertas">
             <div class="carousel-item active">
                 <img src="niñosdeporte.jpg" class="d-block w-100" alt="Niños deportistas">
             </div>
@@ -155,6 +158,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 <footer>
     <hr>

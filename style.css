@@ -29,7 +29,6 @@ img {
 
 
 }
-
 header {
     text-align: center;
     color: #000000;
@@ -38,7 +37,38 @@ header {
     background-repeat: none;
     width: auto;
 }
-
+/*menu*/
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #940253;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;  
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #940253;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;    
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
 /*barra de navegacion*/
 #barra ul {
     list-style-type: none;
@@ -67,48 +97,7 @@ header {
     color: #ffffff;
 }
 
-/*menu desplegable*/
-.dropdown {
-    text-align: left;
-    display: inline-block;
-}
 
-.dropdown-options {
-    display: none;
-    position: absolute;
-    overflow: none;
-}
-
-.dropdown:hover .dropdown-options {
-    display: flex;
-    flex-direction: column;
-}
-
-.drop-item {
-    text-decoration: none;
-    color: #292524;
-    border: solid 1px #d6d3d1;
-    background: white;
-    padding: 0.5em;
-    font-size: 0.9em;
-    font-family: sans;
-}
-
-.drop-item:hover {
-    background: #ffffff;
-}
-
-
-.btn {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.btn:hover {
-    color: #ffffff;
-}
-
-/*fin menu desplegable*/
 
 /*redes*/
 .perfil h1 {
@@ -239,7 +228,58 @@ footer {
 }
 
 /*fin footer*/
-
+/*iniciar sesion*/
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .usuario-form {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    gap: 0.5em;
+    font-family: sans-serif;
+    border: solid 1px #d4d4d4;
+    padding: 2.5em;
+    border-radius: 0.5em;
+    box-shadow: #e5e5e5 0px 1px 4px;
+  }
+  
+  .iniciarsesion {
+    font-size: 1.2rem;
+    align-self: center;
+  }
+  
+  .iniciar-label {
+    color: #292524;
+    font-size: 0.8rem;
+    margin-top: 0.5em;
+  }
+  
+  .iniciar-input {
+    padding: 0.75em;
+    border-radius: 0.25em;
+    border: solid 1px #d4d4d4;
+  }
+  
+  .iniciar-button {
+    margin-top: 1em;
+    padding: 0.6em 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000000;
+    color: #eff6ff;
+    font-weight: 600;
+    transition: ease-in-out 0.2s;
+  }
+  
+  .iniciar-button:hover {
+    background-color: #940253;
+    cursor: pointer;
+  }
+  
+  
 /*moviles*/
 @media (max-width: 480px) {
     body {
